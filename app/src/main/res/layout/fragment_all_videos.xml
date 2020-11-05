@@ -1,0 +1,59 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#aa212565"
+
+    tools:context=".Activities.AllVideos">
+
+    <!-- TODO: Update blank fragment layout -->
+    <!--android:descendantFocusability="afterDescendants"-->
+    <!--android:listSelector="@drawable/bg_select"-->
+
+    <LinearLayout
+        android:id="@+id/ll_tryagin"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Try Again"
+            android:textSize="25dp"
+            android:layout_marginTop="@dimen/_8dp"
+            android:textColor="@color/lb_tv_white"/>
+        <ImageView
+            android:id="@+id/tryagain"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/tryagain"/>
+    </LinearLayout>
+   <GridView
+        android:descendantFocusability="afterDescendants"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:numColumns="4"
+       android:id="@+id/gridview"
+       android:layout_marginLeft="5dp"
+       android:layout_marginBottom="5dp"
+       android:layout_marginTop="5dp"
+       android:layout_marginRight="5dp"
+       android:verticalSpacing="5dp"
+       android:horizontalSpacing="5dp">
+
+
+   </GridView>
+
+    <!--<android.support.v7.widget.RecyclerView-->
+
+        <!--android:layout_margin="24dp"-->
+        <!--android:visibility="visible"-->
+        <!--android:id="@+id/gridview"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content" />-->
+
+
+</FrameLayout>

@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@drawable/back"
+    android:orientation="horizontal"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent">
+
+    <ImageView
+        android:layout_weight="2"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/logo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_marginBottom="24dp"
+        android:orientation="vertical"
+        android:layout_weight="8"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+
+
+
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_weight="6"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <!--<LinearLayout-->
+            <!--android:layout_marginTop="24dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="0dp">-->
+            <!--<LinearLayout-->
+            <!--android:background="@drawable/bg_selectr"-->
+            <!--android:focusable="true"-->
+            <!--android:nextFocusUp="@+id/ll_contact"-->
+            <!--android:nextFocusLeft="@+id/ll_contact"-->
+            <!--android:nextFocusDown="@+id/ll_youtube"-->
+            <!--android:nextFocusRight="@+id/ll_youtube"-->
+            <!--android:id="@+id/ll_audio"-->
+            <!--android:orientation="vertical"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent">-->
+            <!--<ImageView-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:layout_weight="8"-->
+            <!--android:src="@drawable/ic_radio"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="0dp" />-->
+
+            <!--<TextView-->
+            <!--android:textStyle="bold"-->
+            <!--android:textSize="20sp"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:layout_weight="3"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="0dp"-->
+            <!--android:textColor="@color/lb_tv_white"-->
+            <!--android:text="Audio"-->
+            <!--/>-->
+            <!--</LinearLayout>-->
+            <!--<LinearLayout-->
+            <!--android:background="@drawable/bg_selectr"-->
+
+            <!--android:focusable="true"-->
+            <!--android:nextFocusUp="@+id/ll_audio"-->
+            <!--android:nextFocusLeft="@+id/ll_audio"-->
+            <!--android:nextFocusDown="@+id/ll_livetv"-->
+            <!--android:nextFocusRight="@+id/ll_livetv"-->
+            <!--android:id="@+id/ll_youtube"-->
+            <!--android:orientation="vertical"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent">-->
+            <!--<ImageView-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:layout_weight="8"-->
+            <!--android:src="@drawable/ic_youtube"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="0dp" />-->
+
+            <!--<TextView-->
+            <!--android:textStyle="bold"-->
+            <!--android:textSize="20sp"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:layout_weight="3"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="0dp"-->
+            <!--android:textColor="@color/lb_tv_white"-->
+            <!--android:text="YouTube"-->
+            <!--/>-->
+            <!--</LinearLayout>-->
+
+            <!--</LinearLayout>-->
+
+            <LinearLayout
+                android:background="@drawable/bg_selectr"
+                android:focusable="true"
+                android:nextFocusUp="@+id/ll_contact"
+                android:nextFocusDown="@+id/ll_gallery"
+                android:nextFocusRight="@+id/ll_gallery"
+                android:nextFocusLeft="@+id/ll_contact"
+                android:id="@+id/ll_livetv"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical"
+                android:layout_marginTop="24dp"
+                android:layout_weight="2"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp">
+                <ImageView
+                    android:layout_weight="8"
+                    android:id="@+id/iv_livetv"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/ic_live"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp" />
+                <TextView
+                    android:textStyle="bold"
+                    android:textSize="24sp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:textColor="@color/lb_tv_white"
+                    android:text="Live TV"
+
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginBottom="24dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:background="@drawable/bg_selectr"
+                    android:focusable="true"
+                    android:nextFocusDown="@+id/ll_youtube"
+                    android:nextFocusUp="@+id/ll_livetv"
+                    android:nextFocusLeft="@+id/ll_livetv"
+                    android:nextFocusRight="@+id/ll_youtube"
+                    android:id="@+id/ll_gallery"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="8"
+                        android:src="@drawable/ic_gallery"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp" />
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:textColor="@color/lb_tv_white"
+                        android:text="Pictures"
+                        />
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:background="@drawable/bg_selectr"
+                    android:focusable="true"
+                    android:nextFocusDown="@+id/ll_contact"
+                    android:nextFocusUp="@+id/ll_gallery"
+                    android:nextFocusLeft="@+id/ll_gallery"
+                    android:nextFocusRight="@+id/ll_contact"
+                    android:id="@+id/ll_youtube"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="8"
+                        android:src="@drawable/ic_youtube"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp" />
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:textColor="@color/lb_tv_white"
+                        android:text="YouTube"
+                        />
+                </LinearLayout>
+
+
+
+
+
+                <LinearLayout
+                    android:focusable="true"
+                    android:background="@drawable/bg_selectr"
+
+                    android:nextFocusUp="@+id/ll_youtube"
+                    android:nextFocusLeft="@+id/ll_youtube"
+                    android:nextFocusDown="@+id/ll_livetv"
+                    android:nextFocusRight="@+id/ll_livetv"
+                    android:id="@+id/ll_contact"
+
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="8"
+                        android:src="@drawable/ic_contact"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp" />
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:textColor="@color/lb_tv_white"
+                        android:text="Contact"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

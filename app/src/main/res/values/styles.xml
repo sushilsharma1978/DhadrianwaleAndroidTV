@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="@style/Theme.AppCompat.Light.NoActionBar"></style>
+    <style name="MyCustomTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">#FF4081</item>
+        <item name="tabSelectedTextColor">#FFF</item>
+    </style>
+</resources>

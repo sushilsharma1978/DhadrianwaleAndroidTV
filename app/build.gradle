@@ -1,0 +1,48 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion '27.0.3'
+    defaultConfig {
+        applicationId "com.dhadrianwaletv"
+        minSdkVersion 21
+        targetSdkVersion 28
+        versionCode 9
+        versionName '1.9'
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
+}
+
+dependencies {
+    implementation files('libs/YouTubeAndroidPlayerApi.jar')
+
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:leanback-v17:27.1.1'
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.github.bumptech.glide:glide:3.8.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    implementation 'com.android.support:support-v13:27.1.1'
+    implementation 'com.android.support:cardview-v7:27.1.1'
+    implementation 'com.android.support:design:27.1.1'
+    implementation 'com.android.support:support-v4:27.1.1'
+
+    implementation('com.squareup.retrofit2:retrofit:2.1.0') {
+        // exclude Retrofit’s OkHttp dependency module and define your own module import
+        exclude module: 'okhttp'
+    }
+    implementation 'com.google.code.gson:gson:2.6.2'
+    implementation 'com.squareup.retrofit2:converter-gson:2.1.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.4.1'
+    implementation 'com.squareup.okhttp3:okhttp:3.4.1'
+    implementation project(':YouTubePlayer')
+}

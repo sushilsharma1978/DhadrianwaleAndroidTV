@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#000000"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context="com.dhadrianwaletv.Activities.VideoPlay">
+    <com.pierfrancescosoffritti.youtubeplayer.player.YouTubePlayerView
+        android:id="@+id/youtube_player_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="0dp"-->
+    <!--android:layout_weight="0.91"-->
+    <!--android:gravity="center">-->
+
+
+    <!--<WebView-->
+        <!--android:id="@+id/webview"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+    <!--</WebView>-->
+
+    <!--<ProgressBar-->
+
+        <!--android:layout_centerInParent="true"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:id="@+id/progressBar1"/>-->
+    <!--<fragment-->
+    <!--android:name="com.google.android.youtube.player.YouTubePlayerSupportFragment"-->
+    <!--android:id="@+id/youtube_fragment"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"/>-->
+
+    <!--<com.google.android.youtube.player.YouTubePlayerView-->
+    <!--android:id="@+id/youtube_view"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--/>-->
+    <!--android:configChanges="orientation|"-->
+    <!--</LinearLayout>-->
+</RelativeLayout>
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:orientation="vertical"-->
+    <!--android:background="#000000"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:weightSum="1"-->
+    <!--tools:context=".Activities.LiveVideo">-->
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_weight="0.91"-->
+        <!--android:gravity="center">-->
+        <!--<fragment-->
+        <!--android:name="com.google.android.youtube.player.YouTubePlayerSupportFragment"-->
+        <!--android:id="@+id/youtube_fragment"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"/>-->
+    <!--</LinearLayout>-->
+
+    <!--</LinearLayout>-->

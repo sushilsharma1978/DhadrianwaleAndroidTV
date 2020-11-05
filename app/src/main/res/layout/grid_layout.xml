@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+        <LinearLayout
+            android:focusable="true"
+            android:id="@+id/card_view"
+            android:layout_margin="16dp"
+            android:background="@drawable/bg_select"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="4dp"
+       />
+
+    <TextView
+        android:layout_margin="16dp"
+        android:textAlignment="center"
+        android:textColor="#FFF"
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="Fragment List"/>
+        </LinearLayout>
+
+</LinearLayout>
